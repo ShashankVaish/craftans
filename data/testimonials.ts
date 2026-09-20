@@ -8,7 +8,7 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Craftons shipped our site and order automation as one project. We stopped losing orders to manual entry in the first week.",
+      "Craftans shipped our site and order automation as one project. We stopped losing orders to manual entry in the first week.",
     name: "Priya Nair",
     role: "Founder",
     company: "Northgate Orders",

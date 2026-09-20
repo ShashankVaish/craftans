@@ -5,7 +5,7 @@ export interface FaqItem {
 
 export const faqItems: FaqItem[] = [
   {
-    question: "What exactly does Craftons build?",
+    question: "What exactly does Craftans build?",
     answer:
       "Three things, sold individually or together: marketing websites, workflow automations that replace manual ops, and AI agents for chat, voice, or WhatsApp. Most clients start with one and add the others once it's working.",
   },

@@ -12,7 +12,7 @@ export function FacetedMark({ className = "" }: FacetedMarkProps) {
       viewBox="0 0 320 320"
       className={className}
       role="img"
-      aria-label="Faceted low-poly Craftons anvil mark in copper and steel"
+      aria-label="Faceted low-poly Craftans anvil mark in copper and steel"
     >
       <polygon points="160,20 230,90 160,160 90,90" fill="#E08A4B" opacity="0.9" />
       <polygon points="160,20 230,90 260,60" fill="#B9662E" />

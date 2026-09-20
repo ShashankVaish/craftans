@@ -1,4 +1,4 @@
-# Craftons — Build Process
+# Craftans — Build Process
 
 This describes *how* the frontend gets designed, built, reviewed, and shipped —
 sequenced so each phase produces something the next phase can react to, rather than
@@ -26,7 +26,7 @@ visuals prevents the classic "beautiful template, empty content" trap.
 Following the plan → review → build → critique loop:
 1. Produce the design plan (this is `ui.md` — tokens, layout wireframe, principles).
 2. **Review against the brief:** for each design decision, ask "would I have produced
-   this for any dark-themed agency site, or is it specific to Craftons?" Anything that
+   this for any dark-themed agency site, or is it specific to Craftans?" Anything that
    reads as generic gets revised (this is why `ui.md` opens with the "forge" concept
    instead of a plain black+accent default).
 3. Optional: rough static comps (Figma, or a quick HTML/CSS spike) for the hero and

@@ -1,15 +1,15 @@
-# Craftons — Requirements Document
+# Craftans — Requirements Document
 
 ## 1. Project Summary
-Craftons is a digital agency that builds **software business ecosystems** for
+Craftans is a digital agency that builds **software business ecosystems** for
 clients — marketing websites, workflow automations, and AI agents (chat/voice/WhatsApp)
 — delivered as one connected system rather than separate one-off projects.
 
-This document defines what the **Craftons marketing website** (frontend only,
+This document defines what the **Craftans marketing website** (frontend only,
 no backend/CMS) needs to do, for whom, and how success is measured.
 
 > **Assumptions made from the brief** (confirm or correct before build starts):
-> 1. Craftons' core services are: (a) websites, (b) automation workflows, (c) AI agents —
+> 1. Craftans' core services are: (a) websites, (b) automation workflows, (c) AI agents —
 >    sold individually or as a bundled "ecosystem" package.
 > 2. "Black colour photo content" for projects = each portfolio/case-study item is shown
 >    as a **dark-mode product mockup / screenshot** on a black card, not literal B&W photography.
@@ -20,7 +20,7 @@ no backend/CMS) needs to do, for whom, and how success is measured.
 ---
 
 ## 2. Goals & Objectives
-- Position Craftons as a **premium, technically credible** build studio (not a template shop).
+- Position Craftans as a **premium, technically credible** build studio (not a template shop).
 - Convert visitors into qualified leads via a contact form and/or booking link.
 - Showcase range: websites, automations, AI agents — with real (or realistic placeholder)
   proof of work.

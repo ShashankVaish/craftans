@@ -13,7 +13,7 @@ export default function NotFound() {
           This page hasn&apos;t been forged yet.
         </h1>
         <p className="max-w-prose text-body-lg-mobile md:text-body-lg text-ash-400">
-          The page you're looking for doesn't exist. Head back to the homepage.
+          The page you&apos;re looking for doesn&apos;t exist. Head back to the homepage.
         </p>
         <ButtonLink href="/">Back to home</ButtonLink>
       </div>
