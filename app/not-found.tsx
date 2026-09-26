@@ -10,10 +10,10 @@ export default function NotFound() {
           404
         </span>
         <h1 className="text-h2-mobile md:text-h2 text-paper-50">
-          This page hasn&apos;t been forged yet.
+          We can&apos;t find that page.
         </h1>
         <p className="max-w-prose text-body-lg-mobile md:text-body-lg text-ash-400">
-          The page you&apos;re looking for doesn&apos;t exist. Head back to the homepage.
+          The page you&apos;re looking for doesn&apos;t exist. Let&apos;s get you back home.
         </p>
         <ButtonLink href="/">Back to home</ButtonLink>
       </div>

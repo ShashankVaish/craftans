@@ -7,36 +7,36 @@ export const faqItems: FaqItem[] = [
   {
     question: "What exactly does Craftans build?",
     answer:
-      "Three things, sold individually or together: marketing websites, workflow automations that replace manual ops, and AI agents for chat, voice, or WhatsApp. Most clients start with one and add the others once it's working.",
+      "Three things: websites, automation for your daily tasks, and AI helpers for chat, voice, or WhatsApp. You can start with just one, or get all three together.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "How long does a project take?",
     answer:
-      "A website alone usually ships in 2–3 weeks. Adding automations or an AI agent extends that depending on how many systems we're connecting to — we give you a fixed timeline after scoping.",
+      "A website alone usually takes 2–3 weeks. Adding automation or an AI helper takes a bit longer — we'll give you a clear timeline after we talk.",
   },
   {
-    question: "Do you work with an existing tech stack, or do we need to switch?",
+    question: "Do we need to change the tools we already use?",
     answer:
-      "We build around what you already use — your CRM, storefront, support desk, calendar. Automations and agents connect via API; we rarely ask a client to migrate a system just to work with us.",
+      "No. We build around the tools you already use, like your store, calendar, or support desk. We rarely ask you to switch systems.",
   },
   {
     question: "What does pricing look like?",
     answer:
-      "Fixed price per project, scoped after a short call — not hourly billing. See the pricing section above for starting ranges by service.",
+      "One fixed price for the whole project, agreed after a quick call. No surprise hourly bills. See the pricing section above for starting prices.",
   },
   {
-    question: "Who owns the code and workflows after launch?",
+    question: "Who owns everything after launch?",
     answer:
-      "You do. Everything is handed off with documentation — no vendor lock-in, no dependency on us to make future changes.",
+      "You do. We hand over everything with clear instructions, so you're never stuck needing us for small changes.",
   },
   {
-    question: "Can you maintain or extend the project after launch?",
+    question: "Can you help after the project launches?",
     answer:
-      "Yes, on a retainer basis if you want it, but it's optional. Every handoff includes enough documentation that your own team (or another vendor) can pick it up.",
+      "Yes, if you want ongoing help — but it's optional. We explain everything clearly so your own team can take over any time.",
   },
   {
-    question: "What if we're not sure which service we need yet?",
+    question: "Not sure which service you need?",
     answer:
-      "Book a call. Most engagements start there — we'll tell you honestly if a website is enough, or if automation/AI would solve the actual bottleneck.",
+      "Just book a call. We'll listen and tell you honestly whether a website is enough, or if automation or AI would help more.",
   },
 ];

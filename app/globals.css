@@ -9,10 +9,11 @@
 
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 88px;
   }
 
   body {
-    @apply bg-charcoal-950 text-paper-50 font-body antialiased relative;
+    @apply bg-charcoal-950 text-paper-50 font-body antialiased relative overflow-x-hidden;
   }
 
   body::before {
@@ -60,21 +61,159 @@
   }
 }
 
+@layer components {
+  /* Reveal-on-scroll. Content is visible by default (no-JS safe, FR9);
+     the `js` class is added to <html> before paint and hides it until
+     IntersectionObserver marks it `is-visible`. */
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+      opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    transition-delay: var(--reveal-delay, 0ms);
+  }
+
+  .js .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Hero entrance — staggered, JS-gated the same way. */
+  .js .hero-in {
+    animation: hero-rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+    animation-delay: var(--hero-delay, 0ms);
+  }
+
+  .card-glow {
+    position: relative;
+  }
+
+  .card-glow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      135deg,
+      rgba(224, 138, 75, 0.7),
+      rgba(224, 138, 75, 0.05) 40%,
+      rgba(159, 180, 199, 0.25) 100%
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .card-glow:hover::before,
+  .card-glow:focus-within::before,
+  .card-glow.is-active::before {
+    opacity: 1;
+  }
+
+  .marquee {
+    mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  }
+
+  .marquee-track {
+    animation: marquee 38s linear infinite;
+  }
+
+  .marquee:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
 @layer utilities {
   .glow-copper {
-    background: radial-gradient(
-      circle at 50% 30%,
-      rgba(224, 138, 75, 0.25) 0%,
-      rgba(224, 138, 75, 0.08) 35%,
-      rgba(224, 138, 75, 0) 70%
-    );
+    background:
+      radial-gradient(
+        60% 55% at 50% 20%,
+        rgba(224, 138, 75, 0.28) 0%,
+        rgba(224, 138, 75, 0.1) 40%,
+        rgba(224, 138, 75, 0) 72%
+      ),
+      radial-gradient(
+        40% 40% at 80% 60%,
+        rgba(159, 180, 199, 0.08) 0%,
+        rgba(159, 180, 199, 0) 70%
+      );
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(245, 243, 239, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245, 243, 239, 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 100%);
+  }
+
+  .divider-seam {
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, #1c1c21 20%, #1c1c21 80%, transparent 100%);
+  }
+
+  .text-gradient-copper {
+    background: linear-gradient(120deg, #f5c89a 0%, #e08a4b 45%, #b9662e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .container-page {
-    @apply mx-auto max-w-content px-container-mobile md:px-container-desktop;
+    @apply mx-auto w-full max-w-content px-container-mobile md:px-container-desktop;
   }
 
   .section-spacing {
     @apply py-section-mobile md:py-section-desktop;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite;
+  }
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }

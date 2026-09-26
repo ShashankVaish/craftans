@@ -3,52 +3,69 @@ export interface Project {
   name: string;
   problem: string;
   result: string;
+  stat: string;
+  statLabel: string;
   tags: string[];
   featured?: boolean;
 }
 
+// Client and project names are withheld under our confidentiality terms —
+// each case study is described by industry only.
 export const projects: Project[] = [
   {
-    slug: "northgate-orders",
-    name: "Northgate Orders",
-    problem: "D2C brand manually re-keyed orders from 4 sales channels into one spreadsheet.",
-    result: "Order sync time dropped from 3 hrs/day to 4 min, automated.",
+    slug: "online-retail-orders",
+    stat: "3h → 4min",
+    statLabel: "daily order work",
+    name: "Online retail store",
+    problem: "The team copied every order from 4 sales channels into one spreadsheet by hand.",
+    result: "Order updates now take 4 minutes instead of 3 hours a day.",
     tags: ["Next.js", "n8n", "Shopify API"],
     featured: true,
   },
   {
-    slug: "haven-support",
-    name: "Haven Support",
-    problem: "Support inbox backlog of 200+ tickets, most answerable from existing docs.",
-    result: "68% of tickets now resolved by an AI agent before a human sees them.",
+    slug: "software-company-support",
+    stat: "68%",
+    statLabel: "messages answered by AI",
+    name: "Software company",
+    problem: "Over 200 support messages were piling up, even though most answers already existed.",
+    result: "An AI helper now answers 68% of messages before a person sees them.",
     tags: ["Claude", "WhatsApp", "Zendesk"],
   },
   {
-    slug: "ferro-fitness",
-    name: "Ferro Fitness",
-    problem: "Booking site couldn't handle class waitlists or no-show follow-ups.",
-    result: "Waitlist automation recovered ₹4.2L in bookings in the first quarter.",
+    slug: "fitness-studio-bookings",
+    stat: "₹4.2L",
+    statLabel: "bookings recovered",
+    name: "Fitness studio",
+    problem: "The booking site couldn't handle waitlists or remind people who missed a class.",
+    result: "Automatic waitlist reminders brought back ₹4.2L in bookings in one quarter.",
     tags: ["Next.js", "n8n", "Stripe"],
   },
   {
-    slug: "clearlane-logistics",
-    name: "Clearlane Logistics",
-    problem: "Dispatch team tracked shipments across 6 disconnected spreadsheets.",
-    result: "One dashboard now reflects live status across every carrier, no manual entry.",
+    slug: "logistics-dispatch",
+    stat: "6 → 1",
+    statLabel: "spreadsheets to one dashboard",
+    name: "Logistics company",
+    problem: "The dispatch team tracked shipments across 6 separate spreadsheets.",
+    result: "One live dashboard now shows every shipment — no typing required.",
     tags: ["Next.js", "APIs", "n8n"],
   },
   {
-    slug: "birchwood-clinic",
-    name: "Birchwood Clinic",
-    problem: "Reception fielded 40+ daily calls for appointment booking and reminders.",
-    result: "Voice agent now handles booking and reminders, cutting call volume by half.",
+    slug: "healthcare-clinic",
+    stat: "−50%",
+    statLabel: "phone calls to reception",
+    name: "Healthcare clinic",
+    problem: "Reception answered over 40 calls a day just for booking and reminders.",
+    result: "A voice assistant now handles bookings, cutting phone calls in half.",
     tags: ["Voice AI", "Claude", "Calendar API"],
   },
   {
-    slug: "modal-studio",
-    name: "Modal Studio",
-    problem: "Portfolio site was slow to update and scored poorly on mobile performance.",
-    result: "Rebuilt site hits a 98 Lighthouse score and ships new case studies in minutes.",
+    slug: "creative-studio-site",
+    stat: "98/100",
+    statLabel: "speed score",
+    name: "Creative studio",
+    problem: "The old portfolio site was slow to update and loaded poorly on phones.",
+    result: "The new site scores 98/100 for speed and adds new projects in minutes.",
     tags: ["Next.js", "TypeScript", "SEO"],
+    featured: true,
   },
 ];

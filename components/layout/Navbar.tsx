@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { ButtonLink } from "@/components/ui/Button";
+import { BookCallButton } from "@/components/BookCallButton";
+import { FacetedMark } from "@/components/ui/FacetedMark";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { NAV_LINKS, MOBILE_NAV_LINKS, SITE } from "@/lib/constants";
 
@@ -26,14 +27,15 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 h-[72px] border-b transition-colors duration-200 ${
+      className={`fixed inset-x-0 top-0 z-50 h-[72px] border-b transition-all duration-200 ${
         isScrolled
-          ? "border-charcoal-800 bg-charcoal-900"
+          ? "border-charcoal-800 bg-charcoal-950/80 backdrop-blur-md"
           : "border-transparent bg-transparent"
       }`}
     >
       <div className="container-page flex h-full items-center justify-between">
-        <a href="#" className="font-display text-xl font-semibold text-paper-50">
+        <a href="#" className="flex items-center gap-2 font-display text-xl font-semibold text-paper-50">
+          <FacetedMark className="h-7 w-7" />
           {SITE.name}
         </a>
 
@@ -42,17 +44,16 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-body text-paper-50 transition-colors duration-150 hover:text-copper-400"
+              className="group relative text-body text-paper-50 transition-colors duration-150 hover:text-copper-400"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-copper-400 transition-all duration-200 ease-out group-hover:w-full" />
             </a>
           ))}
         </nav>
 
         <div className="hidden md:block">
-          <ButtonLink href={SITE.bookingUrl} target="_blank" rel="noopener noreferrer">
-            Book a call
-          </ButtonLink>
+          <BookCallButton className="px-5 py-2.5">Book a call</BookCallButton>
         </div>
 
         <button

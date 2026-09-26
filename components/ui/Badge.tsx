@@ -8,7 +8,7 @@ export function Badge({ children, tone = "ash" }: BadgeProps) {
 
   return (
     <span
-      className={`inline-flex items-center rounded-sm bg-charcoal-800 px-2.5 py-1 font-mono text-caption ${toneClasses}`}
+      className={`inline-flex items-center rounded-sm border border-charcoal-800 bg-charcoal-800/60 px-2.5 py-1 font-mono text-caption ${toneClasses}`}
     >
       {children}
     </span>

@@ -1,13 +1,18 @@
+import { FacetedMark } from "@/components/ui/FacetedMark";
 import { NAV_LINKS, SOCIAL_LINKS, SITE } from "@/lib/constants";
 
 export function Footer() {
   return (
-    <footer className="border-t border-charcoal-800">
+    <footer className="relative">
+      <div className="divider-seam absolute inset-x-0 top-0" />
       <div className="container-page flex flex-col gap-8 py-12 md:flex-row md:items-start md:justify-between">
         <div className="flex flex-col gap-3">
-          <span className="font-display text-xl font-semibold text-paper-50">
-            {SITE.name}
-          </span>
+          <div className="flex items-center gap-2">
+            <FacetedMark className="h-6 w-6" />
+            <span className="font-display text-xl font-semibold text-paper-50">
+              {SITE.name}
+            </span>
+          </div>
           <p className="max-w-xs text-body text-ash-400">{SITE.tagline}</p>
         </div>
 

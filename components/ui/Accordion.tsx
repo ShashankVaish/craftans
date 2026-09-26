@@ -25,12 +25,16 @@ export function Accordion({ items }: AccordionProps) {
           <div key={item.question}>
             <button
               type="button"
-              className="flex w-full items-center justify-between gap-4 py-5 text-left"
+              className="group flex w-full items-center justify-between gap-4 py-5 text-left transition-colors duration-150"
               aria-expanded={isOpen}
               aria-controls={`faq-panel-${index}`}
               onClick={() => setOpenIndex(isOpen ? null : index)}
             >
-              <span className="text-h3-mobile md:text-h3 text-paper-50">
+              <span
+                className={`text-h3-mobile md:text-h3 transition-colors duration-150 ${
+                  isOpen ? "text-copper-400" : "text-paper-50 group-hover:text-copper-400"
+                }`}
+              >
                 {item.question}
               </span>
               <ChevronDown

@@ -16,8 +16,14 @@ export function SectionHeading({
   return (
     <div className={`flex max-w-2xl flex-col gap-3 ${alignClasses}`}>
       {eyebrow && (
-        <span className="font-mono text-caption uppercase tracking-wide text-copper-400">
+        <span
+          className={`flex items-center gap-2.5 font-mono text-caption uppercase tracking-wide text-copper-400 ${
+            align === "center" ? "justify-center" : ""
+          }`}
+        >
+          <span aria-hidden="true" className="h-px w-6 bg-copper-400" />
           {eyebrow}
+          {align === "center" && <span aria-hidden="true" className="h-px w-6 bg-copper-400" />}
         </span>
       )}
       <h2 className="text-h2-mobile md:text-h2 text-paper-50">{title}</h2>
