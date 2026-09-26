@@ -1,16 +1,16 @@
-# Craftons — Task Checklist
+# Craftans — Task Checklist
 
 Legend: **P0** = blocks everything else · **P1** = needed for v1 launch · **P2** = nice
 to have / can ship post-launch. Grouped to match the phases in `process.md`.
 
 ## Phase 0 — Brief Confirmation
-- [ ] **P0** Confirm Craftons' actual 3 service pillars (assumed: Websites / Automation / AI Agents)
+- [ ] **P0** Confirm Craftans' actual 3 service pillars (assumed: Websites / Automation / AI Agents)
 - [ ] **P0** Confirm "black colour photo content" = dark-mode mockup cards (or correct interpretation)
 - [ ] **P0** Confirm frontend-only scope and chosen form-submission service
 - [ ] **P0** Lock final site map / section list
 
 ## Phase 1 — Content
-- [ ] **P0** Write hero headline + subhead (Craftons value prop, own voice — not a copy of any reference site's copy)
+- [ ] **P0** Write hero headline + subhead (Craftans value prop, own voice — not a copy of any reference site's copy)
 - [ ] **P1** Write 3 service descriptions (2–3 lines each) + relevant tags
 - [ ] **P1** Collect/write 3–6 case studies: project name, problem line, result stat, 3–4 tech tags
 - [ ] **P1** Source or create dark-mode mockup images for each case study

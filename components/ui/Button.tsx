@@ -8,9 +8,9 @@ const baseClasses =
 
 const variantClasses: Record<Variant, string> = {
   primary:
-    "bg-copper-400 text-charcoal-950 hover:bg-copper-600 hover:-translate-y-0.5",
+    "bg-copper-400 text-charcoal-950 shadow-[0_0_0_0_rgba(224,138,75,0)] hover:bg-copper-600 hover:-translate-y-0.5 hover:shadow-[0_8px_24px_-8px_rgba(224,138,75,0.55)]",
   ghost:
-    "bg-transparent border border-charcoal-800 text-paper-50 hover:border-copper-400/50",
+    "bg-transparent border border-charcoal-800 text-paper-50 hover:border-copper-400/50 hover:-translate-y-0.5 hover:bg-charcoal-900",
 };
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {

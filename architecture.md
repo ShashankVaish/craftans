@@ -1,4 +1,4 @@
-# Craftons — Frontend Architecture
+# Craftans — Frontend Architecture
 
 Scope reminder: **frontend only** — no backend, no database, no auth. Any "live data"
 in the UI (dashboard mockups, stats) is static/hardcoded content.
@@ -24,7 +24,7 @@ in the UI (dashboard mockups, stats) is static/hardcoded content.
 
 ## 2. Project Structure
 ```
-craftons/
+craftans/
 ├─ app/
 │  ├─ layout.tsx              # Root layout: fonts, <html>, global providers
 │  ├─ page.tsx                # Home — composes all sections
@@ -147,7 +147,7 @@ introduce React Context at that point — don't pre-install Redux/Zustand for a 
 - `app/layout.tsx` exports a `metadata` object: title template, description, OG image,
   Twitter card, `robots`, canonical URL.
 - One `<h1>` on the page (hero headline); subsequent sections use `<h2>`.
-- Descriptive `alt` text on every case-study mockup (e.g. "Craftons — dark-mode
+- Descriptive `alt` text on every case-study mockup (e.g. "Craftans — dark-mode
   dashboard mockup for [Project], showing order sync overview").
 
 ## 10. Deployment

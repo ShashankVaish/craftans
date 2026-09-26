@@ -1,30 +1,28 @@
 export interface Testimonial {
   quote: string;
-  name: string;
   role: string;
-  company: string;
+  sector: string;
 }
 
+// Names and company names are withheld under our confidentiality terms —
+// each quote is attributed by role and industry only.
 export const testimonials: Testimonial[] = [
   {
     quote:
-      "Craftons shipped our site and order automation as one project. We stopped losing orders to manual entry in the first week.",
-    name: "Priya Nair",
+      "Craftans built our website and order automation together. We stopped losing orders in the first week.",
     role: "Founder",
-    company: "Northgate Orders",
+    sector: "Online retail store",
   },
   {
     quote:
-      "The process page wasn't marketing — that's actually how they worked. We knew what was happening at every stage.",
-    name: "Daniel Cho",
-    role: "Ops Lead",
-    company: "Haven Support",
+      "They showed us real progress every week, not just promises. We always knew where things stood.",
+    role: "Operations lead",
+    sector: "Software company",
   },
   {
     quote:
-      "Our support agent handles two-thirds of tickets now. The team finally has time for the hard ones.",
-    name: "Meera Iyer",
+      "Our AI helper now answers most messages on its own. Our team finally has time for the hard questions.",
     role: "Co-founder",
-    company: "Haven Support",
+    sector: "Customer support team",
   },
 ];

@@ -1,7 +1,6 @@
 "use client";
 
-import { ButtonLink } from "@/components/ui/Button";
-import { SITE } from "@/lib/constants";
+import { BookCallButton } from "@/components/BookCallButton";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -28,16 +27,9 @@ export function MobileMenu({ isOpen, onClose, links }: MobileMenuProps) {
             {link.label}
           </a>
         ))}
-        <ButtonLink
-          href={SITE.bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          variant="primary"
-          className="mt-4 w-full min-h-[44px]"
-          onClick={onClose}
-        >
-          Book a call
-        </ButtonLink>
+        <BookCallButton className="mt-4 w-full min-h-[48px]" onClick={onClose}>
+          Book a free 15-min call
+        </BookCallButton>
       </nav>
     </div>
   );

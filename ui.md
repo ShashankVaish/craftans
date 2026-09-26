@@ -1,12 +1,12 @@
-# Craftons — UI / Design System
+# Craftans — UI / Design System
 
 ## 0. Design Direction (read this first)
 
 The brief asked for something with the *energy* of ETHGlobal (bold, colorful, confident,
 illustrated) blended with the *feel* of the Ferrofold reference (black background,
 glowing accent, technical/dashboard motifs). Copying either one directly would make
-Craftons look like a reskin. Instead, the concept below — **"the forge"** — is built
-specifically for the name *Craftons* (craft + tonnage/weight): a black-steel backdrop
+Craftans look like a reskin. Instead, the concept below — **"the forge"** — is built
+specifically for the name *Craftans* (craft + tonnage/weight): a black-steel backdrop
 with a molten-copper accent, like metal being worked. It borrows the *structural* ideas
 that make the references work (big confident hero, faceted geometric illustration,
 glowing gradient arcs, technical readouts) but gives them a single, original visual
@@ -78,7 +78,7 @@ Line length: cap body copy at ~70–76 characters (`max-w-prose`-style constrain
 - Icons: `lucide-react`, 1.5px stroke, sized 20–24px inline, up to 32px in service cards.
 - Hero illustration: one original **faceted/low-poly geometric mark** (anvil, spark, or
   angular "C" monogram built from triangular facets, echoing the crystalline style
-  referenced but as an original Craftons mark, not a copy of any specific artwork) —
+  referenced but as an original Craftans mark, not a copy of any specific artwork) —
   rendered as inline SVG, using the copper/steel palette. This is the single "bold
   illustrated moment" of the page (per the restraint principle in §6).
 
@@ -88,7 +88,7 @@ Line length: cap body copy at ~70–76 characters (`max-w-prose`-style constrain
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│ [Craftons]      Services  Work  Process  Pricing  FAQ  [Book →]│  ← sticky nav, transparent→solid on scroll
+│ [Craftans]      Services  Work  Process  Pricing  FAQ  [Book →]│  ← sticky nav, transparent→solid on scroll
 ├──────────────────────────────────────────────────────────────┤
 │                                                                │
 │   Eyebrow: "Now booking Q_ 20__"                              │
@@ -123,7 +123,7 @@ Line length: cap body copy at ~70–76 characters (`max-w-prose`-style constrain
 │      [ form: name / email / company / need / budget ]           │
 │      or → [ Book a 15-min call ]                                 │
 ├──────────────────────────────────────────────────────────────┤
-│ Footer: logo · nav · social · email · © Craftons 20__           │
+│ Footer: logo · nav · social · email · © Craftans 20__           │
 └──────────────────────────────────────────────────────────────┘
 ```
 Alignment: **left-aligned** headlines/body throughout (matches a technical/confident
